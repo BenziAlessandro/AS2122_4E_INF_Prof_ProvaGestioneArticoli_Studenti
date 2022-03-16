@@ -14,6 +14,11 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
     {
         DialogResult status = DialogResult.Cancel;
 
+        string nome;
+
+        public string Valore { get; }
+        public string Commento { get; }
+
         // TODO: (5) aggiungere attributi privati dei dati inseriti nella frmArticoli
         // ...
 
