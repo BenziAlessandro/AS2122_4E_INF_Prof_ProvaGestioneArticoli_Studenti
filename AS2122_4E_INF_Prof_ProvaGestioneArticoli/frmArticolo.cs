@@ -40,7 +40,17 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // TODO: (7) passaggio all' attributo/property dei dati inseriti nella frmArticoli con controllo di valorizzazione del dato
             // ... descrizione, unitaMisura, prezzo
 
-            
+            if(txtDescrizione.text = "" && txtunitaMisura = "" && txtprezzo = "")
+            {
+                message.Box("Dati inesistenti, inserisci nuovi dati");
+            }
+            else
+            {
+                Descrizione = txtDescrizione.text;
+                Unita_Misura = txtunitaMisura.text;
+                Prezzo = txtprezzo.text;
+            }
+
             status = DialogResult.OK;
             Close();
         }
